@@ -2,13 +2,13 @@
 using namespace std;
 
 #include <locale.h>
-#define tam 5
+#define TAM 5
 int main(){
     setlocale(LC_ALL, "Portuguese");
- int matriz[tam][tam], linha, coluna;
+ int matriz[TAM][TAM], linha, coluna;
 
- for (linha=0; linha<tam; linha++){
-        for (coluna=0; coluna<tam; coluna++) {
+ for (linha=0; linha<TAM; linha++){
+        for (coluna=0; coluna<TAM; coluna++) {
             if(linha>coluna){
                 matriz[linha][coluna]=1;
             }else{
@@ -17,8 +17,8 @@ int main(){
         }
  }
 
- for (linha=0; linha<tam; linha++){
-    for (coluna=0; coluna<tam; coluna++){
+ for (linha=0; linha<TAM; linha++){
+    for (coluna=0; coluna<TAM; coluna++){
         cout << matriz[linha][coluna] << " | ";
     }
         cout << endl;
